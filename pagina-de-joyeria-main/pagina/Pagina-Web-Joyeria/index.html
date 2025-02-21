@@ -18,7 +18,7 @@
     <nav id="navbar" class="container-fluid navbar navbar-expand-md navbar-dark justify-content-between fixed-top"
         style="background-color: #000000;">
         <a class="navbar-brand" href="#"><img class="rounded-pill" src="images/logoconfondo.jfif" alt="logo"
-                style="width: 100px; height: 100px;"></a>
+                style="width: 100px; height: 100px; " ></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,22 +47,22 @@
 
     <script>
         let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
+        const navbar = document.getElementById("navbar");
 
-window.addEventListener("scroll", function () {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            let navbarHeight = navbar.getBoundingClientRect().height; // Obtiene altura total
 
-    if (scrollTop > lastScrollTop) {
-        // Desplazamiento hacia abajo, ocultar navbar
-        navbar.style.top = "-100px";
-    } else {
-        // Desplazamiento hacia arriba, mostrar navbar
-        navbar.style.top = "0";
-    }
-    
-    lastScrollTop = scrollTop;
-});
+            if (scrollTop > lastScrollTop) {
+                // Ocultar completamente
+                navbar.style.top = `-${navbarHeight}px`;
+            } else {
+                // Mostrar al desplazarse hacia arriba
+                navbar.style.top = "0";
+            }
 
+            lastScrollTop = scrollTop;
+        });
     </script>
 
     <style>
@@ -161,28 +161,28 @@ window.addEventListener("scroll", function () {
 <body>
 
     <div class="imgjoya">
-        <div class="images-Aretes">
-            <a href="Aretes.html">
-                <img src="images/1.png" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+        <div class="images-anillos">
+            <a href="anillos.html">
+                <img src="images/anillo5.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
             </a>
         </div>
 
-        <div class="images-anillos">
-            <a href=" anillos.html">
-                <img src="images/anillo.jpg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+        <div class="images-aretes">
+            <a href="Aretes.html">
+                <img src="images/arete4.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
             </a>
         </div>
 
         <div class="images-cadenas">
             <a href="cadenas.html">
-                <img src="images/cadena.jpg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+                <img src="images/cadena5.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
             </a>
         </div>
 
 
         <div class="images-Pulseras">
             <a href="pulseras.html">
-                <img src="images/choker.jpg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+                <img src="images/pulsera1.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
             </a>
         </div>
 
@@ -206,6 +206,11 @@ window.addEventListener("scroll", function () {
             <img src="images/club_5.jpg" alt="logo" style="width: 150px; height: 300px;">
         </div>
     </div>
+
+
+    
 </body>
+
+
 
 </html>
