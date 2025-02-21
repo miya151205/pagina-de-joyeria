@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Relojes</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .producto {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .producto h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .producto p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #aaa;
+        }
+        .botones {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .boton {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .comprar {
+            background-color: #28a745;
+            color: white;
+        }
+        .favorito {
+            background-color: #ffc107;
+            color: black;
+        }
+        .boton:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="catalogo">
+    <!-- Producto 1 -->
+    <div class="producto">
+        <img src="reloj1.png" alt="Reloj MIDO Multifort">
+        <h2>RELOJ MIDO MULTIFORT M0493071108100 UNISEX</h2>
+        <p>Precio: $26,400.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 2 -->
+    <div class="producto">
+        <img src="reloj2.png" alt="Reloj MIDO Multifort TV">
+        <h2>RELOJ MIDO MULTIFORT TV BIG DATE PVD M0495263308100</h2>
+        <p>Precio: $30,100.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 3 -->
+    <div class="producto">
+        <img src="reloj3.png" alt="Reloj MIDO Commander">
+        <h2>RELOJ MIDO COMMANDER CÍRCULO DE LUZ EDICIÓN LIMITADA M0216263305101</h2>
+        <p>Precio: $34,000.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 4 -->
+    <div class="producto">
+        <img src="reloj4.png" alt="Reloj MIDO Multifort">
+        <h2>RELOJ MIDO MULTIFORT M0493071113600 UNISEX</h2>
+        <p>Precio: $27,800.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 5 -->
+    <div class="producto">
+        <img src="reloj5.png" alt="Reloj Bulova Clásicos">
+        <h2>RELOJ BULOVA CLASICOS 97D138 PARA HOMBRE</h2>
+        <p>Precio: $7,500.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 6 -->
+    <div class="producto">
+        <img src="reloj6.png" alt="Reloj MIDO Multifort">
+        <h2>RELOJ MIDO MULTIFORT M0493073329600 UNISEX</h2>
+        <p>Precio: $31,000.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+</div>
+<a href="Menu.html" class="btn-regresar">Regresar al Menú</a>
+</body>
+</html>
