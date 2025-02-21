@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: aliceblue; /* Fondo negro */
+    background-color: white; /* Fondo negro */
     color: black; /* Texto blanco para mejor contraste */
 }
 
@@ -95,7 +95,7 @@ body {
 
 footer {
     margin-top: auto;
-    background-color: aliceblue;
+    background-color:bisque;
     color: black;
     text-align: center;
     padding: 10px;
