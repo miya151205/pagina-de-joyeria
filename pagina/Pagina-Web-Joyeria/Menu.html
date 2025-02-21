@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        /* Definimos el color dorado oscuro */
+        :root {
+            --golden-dark: #b8860b;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .menu-item {
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .menu-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: var(--golden-dark);
+            font-size: 24px;
+            font-family: 'Georgia', serif; /* Fuente con estilo elegante */
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .menu-item a:hover {
+            color: #ffd700; /* Color dorado brillante al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item">
+            <a href="joyas.html">
+                <img src="Joyas.png" alt="Joyas">
+                Joyas
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="accesorio.html">
+                <img src="Accesorios.png" alt="Accesorios">
+                Accesorios
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="relojes.html">
+                <img src="Reloj.png" alt="Reloj">
+                Relojes
+            </a>
+        </div>
+        <p class="text-center">
+            <!-- Link de regreso a Página 1 -->
+            <a href="index.html">Volver a la Página 1</a>
+        </p>
+</body>
+</html>

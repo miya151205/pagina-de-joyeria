@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Accesorios</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .producto {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .producto img {
+            width: 70%; /* Reduce el tamaño de la imagen al 70% del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .producto h2 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .producto p {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #aaa;
+        }
+        .botones {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .boton {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .comprar {
+            background-color: #28a745;
+            color: white;
+        }
+        .favorito {
+            background-color: #ffc107;
+            color: black;
+        }
+        .boton:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="catalogo">
+    <!-- Producto 1 -->
+    <div class="producto">
+        <img src="accesorio1.png" alt="Aretes Cosmos">
+        <h2>Aretes Cosmos</h2>
+        <p>Precio: $129.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 2 -->
+    <div class="producto">
+        <img src="accesorio2.png" alt="Aretes Zaya">
+        <h2>Aretes Zaya</h2>
+        <p>Precio: $129.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 3 -->
+    <div class="producto">
+        <img src="accesorio3.png" alt="Collar Ojo">
+        <h2>Collar Ojo</h2>
+        <p>Precio: $149.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 4 -->
+    <div class="producto">
+        <img src="accesorio4.png" alt="Pulsera Sabiduria">
+        <h2>Pulsera Sabiduria</h2>
+        <p>Precio: $129.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 5 -->
+    <div class="producto">
+        <img src="accesorio5.png" alt="Collar Capricornio">
+        <h2>Collar Capricornio</h2>
+        <p>Precio: $159.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 6 -->
+    <div class="producto">
+        <img src="accesorio6.png" alt="Collar Tauro">
+        <h2>Collar Tauro</h2>
+        <p>Precio: $159.00</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+</div>
+<a href="Menu.html" class="btn-regresar">Regresar al Menú</a>
+</body>
+</html>

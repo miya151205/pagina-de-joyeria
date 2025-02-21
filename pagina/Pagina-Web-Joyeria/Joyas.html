@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Gemas</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .producto {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .producto h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .producto p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #aaa;
+        }
+        .botones {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .boton {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .comprar {
+            background-color: #28a745;
+            color: white;
+        }
+        .favorito {
+            background-color: #ffc107;
+            color: black;
+        }
+        .boton:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="catalogo">
+    <!-- Producto 1 -->
+    <div class="producto">
+        <img src="gema1.png" alt="Fosfofilita de Bolivia">
+        <h2>Fosfofilita de Bolivia 2.589ct edición suelta japonesa-alemana</h2>
+        <p>Precio: $167,783</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 2 -->
+    <div class="producto">
+        <img src="gema2.png" alt="Diamante Blanco Clásico">
+        <h2>Diamante Blanco Clásico 3.12ct</h2>
+        <p>Precio: $22,000</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 3 -->
+    <div class="producto">
+        <img src="gema3.png" alt="Diamante Negro">
+        <h2>Diamante Negro 4.5ct</h2>
+        <p>Precio: $35,000</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 4 -->
+    <div class="producto">
+        <img src="gema4.png" alt="Diamante Amarillo">
+        <h2>Diamante Amarillo 3.0ct</h2>
+        <p>Precio: $28,500</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 5 -->
+    <div class="producto">
+        <img src="gema5.png" alt="Amatista Púrpura Real">
+        <h2>Amatista Púrpura Real 7.5ct</h2>
+        <p>Precio: $600</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+    
+    <!-- Producto 6 -->
+    <div class="producto">
+        <img src="gema6.png" alt="Esmeralda Colombiana">
+        <h2>Esmeralda Colombiana 5.1ct</h2>
+        <p>Precio: $18,500</p>
+        <div class="botones">
+            <button class="boton comprar">Comprar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+</div>
+<a href="Menu.html" class="btn-regresar">Regresar al Menú</a>
+</body>
+</html>
