@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Joyas</title>
 </head>
+<main style="background-color: white;">
 <header>
     <nav id="navbar" class="container-fluid navbar navbar-expand-md navbar-dark justify-content-between fixed-top"
         style="background-color: #000000;">
@@ -165,10 +166,10 @@
             width: 100%;
             height: 400px;
             border: 0;
-            margin-top: 20px;
+            margin-top: 20px;   
         }
         footer {
-            background-color: #333;
+            background-color: black;
             color: white;
             padding: 20px;
             margin-top: 20px;
@@ -176,6 +177,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-size: 50PX;
         }
         .footer-content {
             display: flex;
@@ -194,16 +196,17 @@
             text-decoration: none;
         }
         .social-icons img {
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
             transition: transform 0.3s ease;
+
         }
         .social-icons img:hover {
             transform: scale(1.2);
         }
         .footer-bottom {
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 22px;
             opacity: 0.7;
         }
     </style>
@@ -250,7 +253,7 @@
 
     </div>
     <p style="height: 30px;"></p>
-    <h1 class="text-center" id="club">Club</h1>
+    <h1 class="text-center" id="club">Nuestros Modelos:</h1>
     <div class="imgclub">
         <div class="images-club">
             <img src="images/club_1.jpg" alt="logo" style="width: 150px; height: 300px;">
@@ -269,7 +272,7 @@
         </div>
     </div>
     <div class="container" id="contacto">
-        <h2>Contacto</h2>
+        <h2 class="text-center" id="contacto">Contacto</h2>
         <form action="#" method="POST">
             <input type="text" name="nombre" placeholder="Tu nombre" required>
             <input type="email" name="email" placeholder="Tu correo electrónico" required>
@@ -277,7 +280,7 @@
             <button type="submit">Enviar</button>
         </form>
         
-        <h3>Ubicación</h3>
+        <h3 class="text-center" id="Ubicación">Ubicación</h3>
         <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9042533587733!2d-73.3563927258526!3d8.236801794067195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a9b5ff877cb4b%3A0x1a9ef8a9b41f2d7c!2sOca%C3%B1a%2C%20Norte%20de%20Santander!5e0!3m2!1ses!2sco!4v1708476312345" 
             allowfullscreen>
@@ -286,19 +289,18 @@
     
     <footer>
         <div class="footer-content">
-            <img src="./images/logo.png" alt="Logo">
+
             <div class="social-icons">
-                <a href="#"><img src="./images/face.png" alt="Facebook"></a>
-                <a href="#"><img src="./images/Insta.png" alt="Instagram"></a>
-                <a href="#"><img src="./images/wasap.png" alt="WhatsApp"></a>
+                <a href="https://facebook.com" target="_blank"><img src="./images/face.png" alt="Facebook"></a>
+                <a href="https://Instagram.com" target="_blank"><img src="./images/Insta.png" alt="Instagram"></a>
+                <a href="https://whatsapp.com" target="_blank"><img src="./images/wasap.png" alt="WhatsApp"></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Todos los derechos reservados
             </div>
         </div>
-        <div class="footer-bottom">
-            &copy; 2025 Todos los derechos reservados
-        </div>
     </footer>
+</main>
 </body>
-
-
 
 </html>
