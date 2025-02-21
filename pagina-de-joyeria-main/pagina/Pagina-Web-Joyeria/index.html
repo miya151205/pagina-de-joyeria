@@ -18,7 +18,7 @@
     <nav id="navbar" class="container-fluid navbar navbar-expand-md navbar-dark justify-content-between fixed-top"
         style="background-color: #000000;">
         <a class="navbar-brand" href="#"><img class="rounded-pill" src="images/logoconfondo.jfif" alt="logo"
-                style="width: 100px; height: 100px;"></a>
+                style="width: 100px; height: 100px; padding: 15px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -172,32 +172,39 @@
             color: white;
             padding: 20px;
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .footer-content {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
         }
         .footer-content img {
-            width: 50px;
+            width: 60px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
         }
         .social-icons a {
-            margin: 0 10px;
             text-decoration: none;
-            color: white;
-            font-size: 20px;
         }
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
         }
-        .footer-links ul li {
-            margin: 5px 0;
+        .social-icons img:hover {
+            transform: scale(1.2);
         }
-        .footer-links ul li a {
-            color: white;
-            text-decoration: none;
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.7;
         }
     </style>
 
@@ -211,7 +218,7 @@
     </div>
 </header>
 <p style="height: 50px;"></p>
-<h1 class="text-center" id="#categoria">Categoria</h1>
+<h1 class="text-center" id="categoria">Categoria</h1>
 
 <body>
 
@@ -261,6 +268,35 @@
             <img src="images/club_5.jpg" alt="logo" style="width: 150px; height: 300px;">
         </div>
     </div>
+    <div class="container" id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <h3>Ubicación</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9042533587733!2d-73.3563927258526!3d8.236801794067195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a9b5ff877cb4b%3A0x1a9ef8a9b41f2d7c!2sOca%C3%B1a%2C%20Norte%20de%20Santander!5e0!3m2!1ses!2sco!4v1708476312345" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <img src="./images/logo.png" alt="Logo">
+            <div class="social-icons">
+                <a href="#"><img src="./images/face.png" alt="Facebook"></a>
+                <a href="#"><img src="./images/Insta.png" alt="Instagram"></a>
+                <a href="#"><img src="./images/wasap.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Todos los derechos reservados
+        </div>
+    </footer>
 </body>
 
 
