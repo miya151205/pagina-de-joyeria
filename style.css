@@ -1,0 +1,128 @@
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+#navbar {
+    transition: top 0.3s;
+    /* Transición suave */
+}
+
+#navbar {
+    transition: top 0.5s;
+    /* Transición suave */
+    position: fixed;
+    /* Asegura que el navbar esté fijo */
+    width: 100%;
+    /* Asegúrate de que ocupe todo el ancho */
+    z-index: 1000;
+    /* Asegura que esté sobre otros elementos */
+}
+
+body {
+    background-color: white;
+    /* Fondo negro */
+    color: black;
+    /* Texto blanco para mejor contraste */
+}
+
+.carousel-inner .carousel-item video,
+.carousel-inner .carousel-item img {
+    width: 120%;
+    height: 100%;
+    /* O usa una altura relativa al contenedor, por ejemplo, '500px' */
+    object-fit: cover;
+}
+
+.imgjoya {
+    display: flex;
+    /* flexbox alinea las imágenes */
+    justify-content: center;
+    /* Centra horizontalmente las imágenes */
+}
+
+.imgjoya div {
+    margin: 10px;
+    /* Espacio entre imágenes */
+}
+
+.imgjoya img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    /* Agrega una transición suave */
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    /* Ajusta la imagen dentro del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.imgjoya :hover {
+    filter: none;
+    /* Vuelve a su color normal al seleccionar */
+}
+
+.imgclub {
+    display: flex;
+    justify-content: center;
+}
+
+.imgclub div {
+    margin: 10px;
+}
+
+.imgclub img {
+    filter: grayscale(100%);
+    margin: 10px;
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    /* Ajusta la imagen dentro del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.imgclub :hover {
+    filter: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mapa-video {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye los elementos horizontalmente */
+    align-items: center;
+
+    padding: 10px;
+}
+
+.mapa-video h1,
+.mapa-video iframe {
+    margin: 0;
+    border-radius: 20px;
+
+}
+
+.contacto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+

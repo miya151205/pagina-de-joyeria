@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Joyas</title>
+</head>
+<main style="background-color: white;">
+<header>
+    <nav id="navbar" class="container-fluid navbar navbar-expand-md navbar-dark justify-content-between fixed-top"
+        style="background-color: #000000; height: 80px;">
+        <a class="navbar-brand" href="#"><img class="rounded-pill" src="images/logoconfondo.jfif" alt="logo"
+                style="width: 100px; height: 100px; padding: 15px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 58%;">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                        style="color: white; font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: bold;">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Joyas"
+                        style="color: white; font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: bold;">Joyas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#club"
+                        style="color: white; font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: bold;">Modelos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto"
+                        style="color: white; font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: bold;">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            let navbarHeight = navbar.getBoundingClientRect().height; // Obtiene altura total
+
+    if (scrollTop > lastScrollTop) {
+        // Desplazamiento hacia abajo, ocultar navbar
+        navbar.style.top = "-100px";
+    } else {
+        // Desplazamiento hacia arriba, mostrar navbar
+        navbar.style.top = "0";
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+
+        .nav-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: gray;
+            transform: scale(1.1);
+        }
+
+        .nav-item {
+            padding: 0 15px;
+        }
+
+        @media (max-width: 767.98px) {
+            .nav-item {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+    </style>
+
+
+    <p style="height: 100px;"></p>
+    <div id="intro" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+            <button data-bs-target="#intro" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#intro" data-bs-slide-to="1"></button>
+            <button data-bs-target="#intro" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Contenido del carrusel -->
+        <div class="carousel-inner  " >
+            <div class="carousel-item active">
+                <video src="images/videoEsmeralda.mp4" style="height: 800px; width: 800px;" class="d-block w-100 rounded" autoplay muted loop></video>
+            </div>
+            <div class="carousel-item">
+                <img src="images/modelo1.jpeg"style="height: 800px; width: 800px;"  class="d-block w-100 rounded" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/modelo2.png" style="height: 800px; width: 800px;" class="d-block w-100 rounded" alt="Imagen 2">
+            </div>
+        </div>
+
+        <!-- Controles de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#intro" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#intro" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Estilos adicionales -->
+    <style>
+        .carousel {
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-inner img,
+        .carousel-inner video {
+            border-radius: 15px;
+        }
+
+        .carousel-indicators button {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        input, textarea, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            margin-top: 20px;   
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 50PX;
+        }
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .footer-content img {
+            width: 60px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 25px;
+            height: 25px;
+            transition: transform 0.3s ease;
+
+        }
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 22px;
+            opacity: 0.7;
+        }
+    </style>
+
+
+    <button class="carousel-control-prev" data-bs-target-="#intro" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" span>
+    </button>
+    <button class="carousel-control-next" data-bs-target-="#intro" data-bs-slide="next">
+        <span class="carousel-control-next-icon" span>
+    </button>
+    </div>
+</header>
+<p style="height: 50px;"></p>
+<h1 class="text-center" id="categoria">Categoria</h1>
+
+<body>
+
+    <div class="imgjoya">
+        <div class="images-anillos">
+            <a href="anillos">
+                <img src="images/anillo5.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+            </a>
+        </div>
+
+        <div class="images-aretes">
+            <a href="Aretes">
+                <img src="images/arete4.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+            </a>
+        </div>
+
+        <div class="images-cadenas">
+            <a href="cadenas">
+                <img src="images/cadena5.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+            </a>
+        </div>
+
+
+        <div class="images-Pulseras">
+            <a href="pulseras">
+                <img src="images/pulsera1.jpeg" alt="logo" style="width: 150px; height: 300px; border: 1.5px solid #000;">
+            </a>
+        </div>
+
+    </div>
+    <p style="height: 30px;"></p>
+    <h1 class="text-center" id="club">Nuestros Modelos:</h1>
+    <div class="imgclub">
+        <div class="images-club">
+            <img src="images/club_1.jpg" alt="logo" style="width: 150px; height: 300px;">
+        </div>
+        <div class="images-club">
+            <img src="images/club_2.jpg" alt="logo" style="width: 150px; height: 300px;">
+        </div>
+        <div class="images-club">
+            <img src="images/club_3.jpg" alt="logo" style="width: 150px; height: 300px;">
+        </div>
+        <div class="images-club">
+            <img src="images/club_4.jpg" alt="logo" style="width: 150px; height: 300px;">
+        </div>
+        <div class="images-club">
+            <img src="images/club_5.jpg" alt="logo" style="width: 150px; height: 300px;">
+        </div>
+    </div>
+    <div class="container" id="contacto">
+        <h2 class="text-center" id="contacto">Contacto</h2>
+        <form action="#" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <h3 class="text-center" id="Ubicación">Ubicación</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9042533587733!2d-73.3563927258526!3d8.236801794067195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a9b5ff877cb4b%3A0x1a9ef8a9b41f2d7c!2sOca%C3%B1a%2C%20Norte%20de%20Santander!5e0!3m2!1ses!2sco!4v1708476312345" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><img src="./images/face.png" alt="Facebook"></a>
+                <a href="https://Instagram.com" target="_blank"><img src="./images/Insta.png" alt="Instagram"></a>
+                <a href="https://whatsapp.com" target="_blank"><img src="./images/wasap.png" alt="WhatsApp"></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+</main>
+</body>
+
+</html>
